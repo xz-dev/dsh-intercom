@@ -341,7 +341,6 @@ function apply(ctx, config) {
           await nextClient.disconnect();
           throw new Error("Intercom runtime disposed");
         }
-        runtime.client = nextClient;
         reconnectAttempts.set(runtime, 0);
         return nextClient;
       } catch (error) {

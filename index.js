@@ -335,6 +335,7 @@ function apply(ctx, config) {
       attachClientHandlers(runtime, nextClient);
       try {
         await spawnBrokerIfNeeded();
+        runtime.client = nextClient;
         await nextClient.connect(buildRegistration(runtime), runtime.agent.id);
         if (runtime.disposed) {
           await nextClient.disconnect();

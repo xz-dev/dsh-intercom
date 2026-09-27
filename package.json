@@ -1,0 +1,25 @@
+{
+  "name": "dsh-intercom",
+  "version": "0.1.0",
+  "description": "Local cross-session messaging for DeepSeek Harness, ported from pi-intercom",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./broker": "./lib/broker-main.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "lib", "cordis.patch.yml", "README.md", "LICENSE", "BEHAVIOR.md"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "license": "MIT",
+  "author": "Xiangzhe",
+  "repository": { "type": "git", "url": "git+https://github.com/xz-dev/dsh-intercom.git" },
+  "engines": { "node": ">=22" },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-home-paths": "0.1.7-rc.2",
+    "@deepseek-ai/dsh-llm": "0.1.7-rc.2",
+    "@deepseek-ai/dsh-tools": "0.1.7-rc.2",
+    "@deepseek-ai/schemastery": "3.18.4"
+  }
+}

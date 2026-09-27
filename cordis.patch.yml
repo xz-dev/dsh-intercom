@@ -1,0 +1,8 @@
+# dsh-intercom: defaults match ~/.pi/agent/intercom/config.json (absent).
+- insert:
+    - id: dsh-intercom
+      name: dsh-intercom
+      config:
+        enabled: true
+        inboundTrigger: always
+        replyHint: true

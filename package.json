@@ -1,6 +1,6 @@
 {
   "name": "dsh-intercom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Local cross-session messaging for DeepSeek Harness, ported from pi-intercom",
   "type": "module",
   "main": "index.js",
